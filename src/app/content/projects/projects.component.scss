@@ -1,0 +1,172 @@
+$bold: "CascadiaCode-Bold", Arial, Helvetica, sans-serif;
+$regular: "CascadiaCode", Arial, Helvetica, sans-serif;
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $bold;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-container .text-box {
+    display: flex;
+    flex-direction: column;
+    background: #e0ffff;
+    transition: 1s all ease;
+    width: 350px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.text-box:hover {
+    transform: translateY(-10px);
+}
+
+.github {
+    min-height: 60px;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.icon {
+    margin: 10px;
+}
+
+fa-icon {
+    color: #2f2f30;
+}
+
+.project {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.description {
+    font-family: $regular;
+    color: #2F2F30;
+    flex: 1 1;
+    padding: 10px;
+}
+
+.project .techstack {
+    font-family: $bold;
+    color: #5a5a61;
+    opacity: .8;
+}
+
+.project .techstack {
+    height: 35px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.text-container {
+    margin: 10px;
+}
+
+.text-box {
+    margin: 10px;
+}
+
+.techstack {
+    font-size: .7vw;
+}
+
+.description {
+    font-size: .8vw;
+}
+
+@media (max-width: 1400px) {
+    .text-container .text-box {
+        width: 320px;
+        border-radius: 15px;
+    }
+
+    .techstack {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.1vw;
+    }
+
+    .description {
+        font-size: 1.1vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text-container {
+        flex-wrap: wrap;
+    }
+
+    .text-container .text-box {
+        width: 50vw;
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    .description {
+        font-size: 1.3vw;
+    }
+
+    .techstack {
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-container {
+        flex-wrap: wrap;
+    }
+
+    .text-container .text-box {
+        width: 50vw;
+        border-radius: 15px;
+    }
+
+    .description {
+        font-size: 1.5vw;
+    }
+
+    .techstack {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-container .text-box {
+        width: 50vw;
+        border-radius: 15px;
+        height: 350px;
+    }
+
+    .description {
+        font-size: 2vh;
+    }
+
+    .techstack {
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-container .text-box {
+        width: 85vw;
+        border-radius: 15px;
+        height: 425px;
+    }
+
+    .techstack {
+        margin-top: 10px;
+    }
+}

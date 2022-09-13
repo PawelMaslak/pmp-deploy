@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="menu">
+        <div class="logo">
+            <span class="logo">
+                <img src="../assets/images/pm-logo.svg">
+            </span>
+        </div>
+        <div class="bars">
+            <div class="hamburger" id="hamburger-1" (click)="toggleMenu()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </div>
+    <div id="links">
+        <a href="#about" (click)="clickMenu()">
+            <span class="menu-item">
+                About
+            </span>
+        </a>
+        <a href="#projects" (click)="clickMenu()">
+            <span class="menu-item">
+                Projects
+            </span>
+        </a>
+        <a href="#contact" (click)="clickMenu()">
+            <span class="menu-item">
+                Contact Me
+            </span>
+        </a>
+    </div>
+</div>

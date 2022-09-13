@@ -1,0 +1,19 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    min-height: 100vh;
+    display: none;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    overflow: hidden;
+}
+
+.loader {
+    overflow: hidden;
+}

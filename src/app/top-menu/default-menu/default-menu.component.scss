@@ -1,0 +1,85 @@
+$navheight: 85px;
+$menu-item-color: #e0ffff;
+$menu-item-color-focus: #dbf227;
+$font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+.logo {
+    display: block;
+    width: 90px;
+    height: 90px;
+    transition: 1s all ease-out;
+}
+
+.logo:hover {
+    transform: translateY(-3px);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu-item {
+    display: block;
+    font-family: $font-mono;
+    color: $menu-item-color;
+    transition: 1s all ease-out;
+}
+
+.menu-item:hover {
+    color: $menu-item-color-focus;
+    transform: translateY(-5px);
+}
+
+@keyframes show-menu {
+    0% {
+        opacity: 0;
+        transform: translateY(-85px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+header {
+    display: flex;
+    height: $navheight;
+    background-color: #2f2f30;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    transition: top 1s;
+    z-index: 1;
+    animation: show-menu 1s ease-in;
+
+    nav {
+        display: inherit;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 50px;
+
+        div {
+            display: flex;
+
+            ol {
+                justify-content: space-between;
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin: auto;
+                    align-items: center;
+                    padding: 15px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+}
+
+//This is some pseudo-change.
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #42455a;
+}
+
+p {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Goonies";
+    src: local("Goonies"), url(./assets/fonts/Goonies/Goonies.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "CascadiaCode";
+    src: local("CascadiaCode"), url(./assets/fonts/Cascadia/CascadiaCode.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "CascadiaCode-Bold";
+    src: local("CascadiaCode-Bold"), url(./assets/fonts/Cascadia/CascadiaCode-Bold.ttf) format("truetype");
+}

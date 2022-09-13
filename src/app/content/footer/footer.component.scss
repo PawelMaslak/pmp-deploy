@@ -1,0 +1,61 @@
+$regular: "CascadiaCode", Arial, Helvetica, sans-serif;
+
+footer {
+  background-color: #e0ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3vh;
+  font-family: $regular;
+}
+
+.signature {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+
+span {
+  color: #42455a;
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+  transition: 1s all ease;
+  padding-top: 5px;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+fa-icon {
+  display: block;
+  color: #42455a;
+  transition: 1s all ease;
+}
+
+fa-icon:hover {
+  color: #2f2f30;
+  transform: translateY(-10px);
+}
+
+ol {
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: auto;
+    align-items: center;
+    padding: 15px;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

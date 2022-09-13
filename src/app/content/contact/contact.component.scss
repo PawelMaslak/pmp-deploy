@@ -1,0 +1,161 @@
+$bold: "CascadiaCode-Bold", Arial, Helvetica, sans-serif;
+$regular: "CascadiaCode", Arial, Helvetica, sans-serif;
+
+span {
+    font-family: $regular;
+}
+
+.header {
+    font-family: $bold;
+    text-transform: uppercase;
+}
+
+.bold {
+    font-family: $bold;
+}
+
+@keyframes show-console {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+//Refactored Styles
+
+.description {
+    min-height: 100px;
+}
+
+.console {
+    font-family: $regular;
+    box-sizing: border-box;
+    margin: auto;
+    animation: show-console 1s ease-in;
+    width: 800px;
+    height: 450px;
+}
+
+.hello {
+    display: flex;
+    height: 100%;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+a {
+    all: unset;
+    width: 130px;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.console header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #555;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #ddd;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 2px solid;
+    border-color: rgb(99, 222, 0);
+    border-radius: 5px;
+    transition: 1s all ease;
+}
+
+.button:hover {
+    border-radius: 15px;
+    background: rgba(99, 222, 0, 0.2);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.console header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #555;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #ddd;
+}
+
+.console .consolebody {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: calc(100% - 45px);
+    overflow: hidden;
+    background-color: #000;
+    color: #63de00;
+    display: flex;
+    flex-flow: column;
+}
+
+.desc-body {
+    font-size: .8vw;
+}
+
+@media (max-width: 1400px) {
+    .console {
+        width: 800px;
+    }
+
+    .desc-body {
+        font-size: 1.1vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .console {
+        width: 50vw;
+    }
+
+    .desc-body {
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .console {
+        width: 50vw;
+    }
+
+    .desc-body {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .console {
+        width: 65vw;
+    }
+
+    .desc-body {
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .console {
+        width: 85vw;
+    }
+}
