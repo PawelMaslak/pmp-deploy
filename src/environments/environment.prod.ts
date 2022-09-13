@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  underConstruction: false
+  underConstruction: false,
+  animations: true
 };
