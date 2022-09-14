@@ -4,5 +4,5 @@
 
 export const environment = {
   production: false,
-  animations: false
+  animations: true
 };
