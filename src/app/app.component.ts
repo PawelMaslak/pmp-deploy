@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
         setTimeout(() => {
           main.style.opacity = '1';
         }, 100);
-      }, 6500);
+      }, 4000);
     }
   }
 
